@@ -1,0 +1,9 @@
+{% extends 'assignment3/base.html' %}
+{% block content %}
+        {% for item in imgquote %}
+        <div><img src={{item.image}} alt="pictureofwinston", width="800"> 
+            <h2>"{{item.quote}}"</h2>
+        </div>
+        {% endfor %}
+
+        {% endblock %}
