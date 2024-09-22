@@ -1,5 +1,5 @@
-## assignment3/urls.py
-## description: URL patterns for the assignment3 app
+## quotes/urls.py
+## description: URL patterns for the quotes app
 
 from django.urls import path
 from django.conf import settings

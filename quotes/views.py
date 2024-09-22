@@ -1,5 +1,5 @@
-## assignment3/views.py
-## description: write view functions to handle URL requests for the assignment3 app
+## quotes/views.py
+## description: write view functions to handle URL requests for the quotes app
 
 from django.shortcuts import render
 
@@ -13,7 +13,7 @@ images =['https://pbs.twimg.com/media/GFnB2iLb0AA2oNZ.jpg','https://gray-kplc-pr
 
 # Create your views here.
 # def home(request):
-#     '''Handle the main URL for the assignment3 app.'''
+#     '''Handle the main URL for the quotes app.'''
 
 #     response_text = f'''
 #     <html>
@@ -28,11 +28,11 @@ images =['https://pbs.twimg.com/media/GFnB2iLb0AA2oNZ.jpg','https://gray-kplc-pr
 
 #def home(request):
 #    '''
-#    Function to handle the URL request for /assignment3 (home page).
-#    Delegate rendering to the template assignment3/home.html.
+#    Function to handle the URL request for /quotes (home page).
+#    Delegate rendering to the template quotes/home.html.
 #    '''
 #    # use this template to render the response
-#    template_name = 'assignment3/home.html'
+#    template_name = 'quotes/home.html'
 
     # create a dictionary of context variables for the template:
 #    context = {
@@ -47,10 +47,10 @@ images =['https://pbs.twimg.com/media/GFnB2iLb0AA2oNZ.jpg','https://gray-kplc-pr
 
 def home(request):
     '''
-#    Function to handle the URL request for /assignment3 (home page).
-#    Delegate rendering to the template assignment3/home.html.
+#    Function to handle the URL request for /quotes (home page).
+#    Delegate rendering to the template quotes/home.html.
 #    '''
-    template_name = 'assignment3/home.html'
+    template_name = 'quotes/home.html'
     context = {
         "quote" : quotes[random.randint(0,len(quotes)-1)],
         #"image" : images[random.randint(0,len(images)-1)],
@@ -61,9 +61,9 @@ def home(request):
 def quote(request):
     '''
 #    Function to handle the URL request for /quote.
-#    Delegate rendering to the template assignment3/quote.html.
+#    Delegate rendering to the template quotes/quote.html.
 #    '''
-    template_name = 'assignment3/quote.html'
+    template_name = 'quotes/quote.html'
     #create a dictionary of context variables to select a random quote and image
     context = {
         "quote" : quotes[random.randint(0,len(quotes)-1)],
@@ -75,9 +75,9 @@ def quote(request):
 def show_all(request):
     '''
 #    Function to handle the URL request for /show_all.
-#    Delegate rendering to the template assignment3/show_all.html.
+#    Delegate rendering to the template quotes/show_all.html.
 #    '''
-    template_name = 'assignment3/show_all.html'
+    template_name = 'quotes/show_all.html'
     imgquote = [
         {
             "quote" : quotes[0],
@@ -100,9 +100,9 @@ def show_all(request):
 def about(request):
     '''
 #    Function to handle the URL request for /about.
-#    Delegate rendering to the template assignment3/about.html.
+#    Delegate rendering to the template quotes/about.html.
 #    '''
-    template_name = 'assignment3/about.html'
+    template_name = 'quotes/about.html'
     context = {
         "quote" : quotes[random.randint(0,len(quotes)-1)],
         #"image" : images[random.randint(0,len(images)-1)],
