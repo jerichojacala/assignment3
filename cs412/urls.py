@@ -27,4 +27,4 @@ urlpatterns = [
     path("show_all/", include("quotes.urls")),
     path("about/", include("quotes.urls")),
 ] + static(settings.STATIC_URL,
-           document_root=settings.STATIC_ROOT)
+           document_root=settings.STATIC_ROOT) #define path to static directory
