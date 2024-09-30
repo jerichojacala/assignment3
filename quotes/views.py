@@ -67,7 +67,8 @@ def quote(request):
     #create a dictionary of context variables to select a random quote and image
     context = {
         "quote" : quotes[random.randint(0,len(quotes)-1)],
-        "image" : images[random.randint(0,len(images)-1)],
+        #"image" : images[random.randint(0,len(images)-1)],
+        "image" : images[2],
     }
     return render(request, template_name,context)
 

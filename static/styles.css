@@ -22,18 +22,3 @@ div{
     margin: auto;
     text-align: center;
 }
-
-nav li a {
-  color: bisque; /* Change link color */
-  text-decoration: none; /* Optional: removes the underline */
-}
-
-nav {
-  display: flex;  /* align the list items on one line */
-  justify-content: space-around;  /* space out links */
-}
-
-nav li {
-  list-style: none;  /* remove the default bullet points */
-  display: inline;  /* puts the li elements on one line */
-}
