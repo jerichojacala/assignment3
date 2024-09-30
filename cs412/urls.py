@@ -28,9 +28,9 @@ urlpatterns = [
     path("about/", include("quotes.urls")),
     #path("formdata/", include("formdata.urls")),
     #path("submit/", include("formdata.urls")),
-    #path("", include("restaurant.urls")),
-    #path("main/", include("restaurant.urls")),
-    #path("order/", include("restaurant.urls")),
-    #path("confirmation/", include("restaurant.urls")),
+    path("restaurant/", include("restaurant.urls")),
+    path("restaurant/main/", include("restaurant.urls")),
+    path("restaurant/order/", include("restaurant.urls")),
+    path("restaurant/confirmation/", include("restaurant.urls")),
 ] + static(settings.STATIC_URL,
            document_root=settings.STATIC_ROOT) #define path to static directory

@@ -7,7 +7,7 @@ from . import views
 
 #define a list of valid URL patterns
 urlpatterns = [
-    path(r'', views.home, name="home"),
+    path("", views.home, name="home"),
     path("main/",views.main,name="main"), 
     path("order/", views.order, name="order"),
     path("confirmation/",views.confirmation,name="confirmation"),
