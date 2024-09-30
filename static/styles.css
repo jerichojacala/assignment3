@@ -1,7 +1,7 @@
 
 /* https://blog.hubspot.com/website/css-font-size*/
 /*https://blog.hubspot.com/website/change-text-color-css*/
-body{background-color: brown; border: 1px solid bisque;}
+body{background-color: brown; border: 1px solid bisque; color: aliceblue;}
 p{color: aliceblue; font-style: italic;}
 h1{color:bisque;font-size:xxx-large; text-align: center; margin: 30px;}
 h2{padding:20px;

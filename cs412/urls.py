@@ -21,10 +21,16 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", include("quotes.urls")), ## we create the URL quotes/, 
+    #path("", include("quotes.urls")), ## we create the URL quotes/, 
                                      ## and associate it with URLs in another file
-    path("quote/", include("quotes.urls")),
-    path("show_all/", include("quotes.urls")),
-    path("about/", include("quotes.urls")),
+    #path("quote/", include("quotes.urls")),
+    #path("show_all/", include("quotes.urls")),
+    #path("about/", include("quotes.urls")),
+    #path("formdata/", include("formdata.urls")),
+    #path("submit/", include("formdata.urls")),
+    path("", include("restaurant.urls")),
+    path("main/", include("restaurant.urls")),
+    path("order/", include("restaurant.urls")),
+    path("confirmation/", include("restaurant.urls")),
 ] + static(settings.STATIC_URL,
            document_root=settings.STATIC_ROOT) #define path to static directory
