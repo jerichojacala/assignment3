@@ -14,7 +14,7 @@ special_values = ["blueberrycupcake", "strawberrydonut", "brownsugarthaitea"]
 def home(request):
     '''
 #    Function to handle the URL request for /quotes (home page).
-#    Delegate rendering to the template quotes/home.html.
+#    Delegate rendering to the template restaurant/main.html.
 #    '''
     template_name = 'restaurant/main.html'
     context = {
@@ -25,7 +25,7 @@ def home(request):
 def main(request):
     '''
 #    Function to handle the URL request for /quotes (home page).
-#    Delegate rendering to the template quotes/home.html.
+#    Delegate rendering to the template restaurant/main.html.
 #    '''
     template_name = 'restaurant/main.html'
     context = {
@@ -34,7 +34,10 @@ def main(request):
     return render(request, template_name,context)
 
 def order(request):
-    '''Show the contact form'''
+    '''
+    Show the contact form.
+    Delegate rendering to the template restaurant/order.html
+    '''
 
     template_name = "restaurant/order.html"
     item = random.randint(0,len(specials)-1)
@@ -52,12 +55,13 @@ def confirmation(request):
     Handle the form submission.
     Read the form data from the request
     and send it back to a template.
+    Delegate rendering to restaurant/confirmation.html
     '''
     template_name = "restaurant/confirmation.html"
     if request.POST:
         # Get form data
         sum = 0
-        items = []
+        items = [] #create a list and add checked items to this list, keep a sum variable to keep track of prices
         if request.POST.get('itemdonut'):
             items.append('Single donut: $1')
             sum += 1.00

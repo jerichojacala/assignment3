@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-%#3rug1vur8h(@$#-a_ev6@gzq7#$y!9&*h3a&5s$xw%9@f3w!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["*"] #Before we can run the server on the public World-Wide Web, we need to establish which hosts (clients) are allowed to view the website. We could set individual hostnames, but instead we will use the wildcard '*', meaning anyone can access the website.
 
 
 # Application definition
