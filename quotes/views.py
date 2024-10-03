@@ -45,7 +45,7 @@ images =['https://pbs.twimg.com/media/GFnB2iLb0AA2oNZ.jpg','https://gray-kplc-pr
     # delegate rendering work to the template
 #    return render(request, template_name, context)
 
-def home(request):
+def home1(request):
     '''
 #    Function to handle the URL request for /quotes (home page).
 #    Delegate rendering to the template quotes/home.html.

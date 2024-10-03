@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'quotes', #new addition
     #'formdata', #new app!!!
     'restaurant',
-    'blog',
+    #'blog',
     'mini_fb',
 ]
 

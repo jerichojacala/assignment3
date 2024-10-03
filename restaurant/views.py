@@ -11,16 +11,17 @@ import random
 specials = ["Blueberry Cupcakes: $1", "Strawberry Donuts: $0.50", "Brown Sugar Thai Tea: $3"]
 special_values = ["blueberrycupcake", "strawberrydonut", "brownsugarthaitea"]
 
-def home(request):
-    '''
+
+#def home(request):
+
 #    Function to handle the URL request for /quotes (home page).
 #    Delegate rendering to the template restaurant/main.html.
 #    '''
-    template_name = 'restaurant/main.html'
-    context = {
+#    template_name = 'restaurant/main.html'
+#    context = {
         
-    }
-    return render(request, template_name,context)
+#    }
+#    return render(request, template_name,context)
 
 def main(request):
     '''

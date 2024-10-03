@@ -1,0 +1,31 @@
+<!--mini_fb/templates/mini_fb/show_all_profiles.html-->
+{% load static %}
+<head>
+    <title>
+        Mini Facebook
+    </title>
+    <link rel="stylesheet" href="{% static 'styles-blog.css' %}">
+</head>
+
+<h1>Show All Profiles</h1>
+
+
+<main class="grid-container"></main>
+
+<profile>
+    <table>
+        <tr>
+    <!--loop to display each article-->
+    {% for a in profiles %}
+    <td>
+        <h2>{{a.firstname}} {{a.lastname}}</h2>
+        <h3>{{a.city}}</h3>
+        
+        <!--new: display the image URL stored in the database-->
+        <img src="{{a.image_url}}" alt="{{a.image_url}}" height="180" width="198">
+    </td>
+    {% endfor %}
+    </tr>
+    </table>
+</profile>
+</main>

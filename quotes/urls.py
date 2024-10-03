@@ -7,7 +7,7 @@ from . import views
 
 # all of the URLs that are part of this app
 urlpatterns = [
-    path(r'', views.home, name="home"),
+    path(r'', views.home1, name="home1"),
     path("quote/",views.quote,name="quote"),
     path("show_all/", views.show_all,name="show_all"),
     path("about",views.about,name="about")
