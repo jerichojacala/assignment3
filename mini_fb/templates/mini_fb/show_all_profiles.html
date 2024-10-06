@@ -1,16 +1,10 @@
 <!--mini_fb/templates/mini_fb/show_all_profiles.html-->
+{% extends 'mini_fb/base.html' %}
 {% load static %}
-<head>
-    <title>
-        Mini Facebook
-    </title>
-    <link rel="stylesheet" href="{% static 'styles-blog.css' %}">
-</head>
+
+{% block content %}
 
 <h1>Show All Profiles</h1>
-
-
-<main class="grid-container"></main>
 
 <profile>
     <table>
@@ -28,4 +22,4 @@
     </tr>
     </table>
 </profile>
-</main>
+{% endblock %}
