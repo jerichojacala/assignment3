@@ -9,7 +9,12 @@
     </head>
 
     <body>
-
+        <nav>
+            <li>
+                <li><a href="{% url 'show_all' %}">Show All</a></li>
+                <li><a href="{% url 'random' %}">Random</a></li>
+            </li>
+        </nav>
         <!--fill in this section with specific page detail-->
         {% block content %}
         <!--fill in this section with specific page detail-->

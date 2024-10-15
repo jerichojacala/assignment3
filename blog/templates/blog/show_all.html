@@ -9,11 +9,11 @@
 {% block content %}
 <main class="grid-container"></main>
 
-<article>
+<article class="featured">
     <!--loop to display each article-->
     {% for a in articles %}
     <div>
-        <h2>{{a.title}}</h2>
+        <h2><a href="{% url 'article' a.pk %}">{{a.title}}</a></h2>
         <h3>{{a.author}} at {{a.published}}</h3>
         
         <!--new: display the image URL stored in the database-->

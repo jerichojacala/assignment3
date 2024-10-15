@@ -8,5 +8,7 @@ from . import views
 #define a list of valid URL patterns
 urlpatterns = [
     path(r'',views.ShowAllProfilesView.as_view(),name="show_all_profiles"), 
-    #path(r'about', views.about, name="about"),
+    path(r'profile/<int:pk>',views.ShowProfilePageView.as_view(),name="show_profile_page"), 
+    path(r'create_profile',views.CreateProfileView.as_view(),name="create_profile"),
+    path(r'<int:pk>/create_status',views.CreateStatusMessageView.as_view(),name="create_status"),  
 ]

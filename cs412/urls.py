@@ -33,6 +33,8 @@ urlpatterns = [
     path("restaurant/order/", include("restaurant.urls")),
     path("restaurant/confirmation/", include("restaurant.urls")),
     #path("blog/", include("blog.urls")),
+    #path("blog/article", include("blog.urls")),
+    #path("blog/article/create_comment", include("blog.urls")),
     path("mini_fb/", include("mini_fb.urls"))
 ] + static(settings.STATIC_URL,
            document_root=settings.STATIC_ROOT) #define path to static directory
